@@ -12,7 +12,8 @@ const dbconnection = async () => {
       server: 'DESKTOP-V403TQ4',
       database: 'Angular',
       PORT: 1433,
-      encrypt: false
+      encrypt: false,
+      trustServerCertificate: true
     };
   
     try {
@@ -34,7 +35,8 @@ const dbconnection = async () => {
         server: 'DESKTOP-V403TQ4',
         database: 'Angular',
         PORT: 1433,
-        encrypt: false
+        encrypt: false,
+        trustServerCertificate: true
       };
     try {
         const pool=  await sql.connect(config);
@@ -64,7 +66,8 @@ try {
         server: 'DESKTOP-V403TQ4',
         database: 'Angular',
         PORT: 1433,
-        encrypt: false
+        encrypt: false,
+        trustServerCertificate: true
      
 }
     
@@ -100,7 +103,8 @@ catch (error) {
         server: 'DESKTOP-V403TQ4',
         database: 'Angular',
         PORT: 1433,
-        encrypt: false
+        encrypt: false,
+        trustServerCertificate: true
      
 }
 
